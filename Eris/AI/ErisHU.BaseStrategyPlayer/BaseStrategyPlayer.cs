@@ -21,8 +21,6 @@
 
         private int lastMyPushMoney;
 
-        private bool isAllIn;
-
         private GameRoundType currentRoundType;
 
         private List<IReadOnlyCollection<PlayerActionAndName>> roundsActions = new List<IReadOnlyCollection<PlayerActionAndName>>();
@@ -96,7 +94,6 @@
             if (this.currentRoundType == GameRoundType.Flop && this.currentGameStackStage == GameStackStage.DeepStack)
             {
                 DeepStackStrategy.FlopActions.AddRange(context.RoundActions);
-                PreflopDataUpdate(this.Name);
             }
 
             this.roundsActions.Add(context.RoundActions);
@@ -138,25 +135,6 @@
             }
 
             throw new ArgumentException("GameStackStage Error !!");
-        }
-
-        private static void PreflopDataUpdate(string myName)
-        {
-            var firstFlopAction = DeepStackStrategy.FlopActions.FirstOrDefault();
-            var secondFlopAction = DeepStackStrategy.FlopActions.Skip(1).FirstOrDefault();
-            var thirdFlopAction = DeepStackStrategy.FlopActions.Skip(2).FirstOrDefault();
-
-            if (firstFlopAction.PlayerName != myName && firstFlopAction.Action.Type == PlayerActionType.CheckCall
-                && secondFlopAction.Action.Type == PlayerActionType.Raise && thirdFlopAction.Action.Type == PlayerActionType.Fold)
-            {
-                DeepStackStrategy.opponentFoldCBetOnTheFlopCount++;
-            }
-
-            if (firstFlopAction.PlayerName != myName && firstFlopAction.Action.Type == PlayerActionType.CheckCall
-                && secondFlopAction.Action.Type == PlayerActionType.Raise)
-            {
-                DeepStackStrategy.cBetOnTheFlopCount++;
-            }
         }
     }
 }
