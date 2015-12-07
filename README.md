@@ -22,6 +22,7 @@ Yet dummy AI for Telerik Academy DSA Course teamwork
   * BoardStrengthType
   * KickerType
   * BoardType
+  * Tests
   
 * Base strategy
   * Base strategy
@@ -39,10 +40,15 @@ Yet dummy AI for Telerik Academy DSA Course teamwork
 ## Main Idea
 
 * Using predefinde cards strengts depending from game and stack stage.
+* The strengths of the cards are taken by ranges depending stack stage and game turn. The are taken by real life experience.
 
 - - - - 
 
-###### Repo of the Team [Link to GitHub](https://github.com/)
+## Aditional info
+
+* Unit test for hand strengths type evaluation
+
+###### Repo of the Team [Link to GitHub](https://github.com/DYanis/Eris-No-Real-Poker-Bot)
 
 - - - - 
 
