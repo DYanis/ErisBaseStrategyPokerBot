@@ -1,4 +1,4 @@
-﻿namespace ErisHU.BaseStrategyPlayer.HandEvaluate
+﻿namespace TexasHoldem.HandEvaluate
 {
     using System;
     using System.Collections.Generic;

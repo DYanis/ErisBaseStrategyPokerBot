@@ -1,7 +1,6 @@
-﻿namespace TexasHoldem.AI.SmartPlayer.Original
+﻿namespace TexasHoldem.AI.TestPlayers.SmartPlayer
 {
     using System;
-    using TexasHoldem.AI.SmartPlayer.Original.Helpers;
     using TexasHoldem.Logic;
     using TexasHoldem.Logic.Extensions;
     using TexasHoldem.Logic.Players;

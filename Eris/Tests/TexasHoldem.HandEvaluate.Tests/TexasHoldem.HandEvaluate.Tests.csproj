@@ -53,7 +53,6 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="EvaluateTests.cs" />
     <Compile Include="FlushSubTypeRecognitionTests.cs" />
     <Compile Include="FourOfAKindSubTypeRecognitionTests.cs" />
     <Compile Include="FullHouseSubTypeRecognitionTests.cs" />
@@ -65,13 +64,9 @@
     <Compile Include="TwoPairsSubTypeRecognitionWithFourBoardCardsTests.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\AI\ErisHU.BaseStrategyPlayer\ErisHU.BaseStrategyPlayer.csproj">
-      <Project>{45368e92-f76a-412d-81ce-63b47978416c}</Project>
-      <Name>ErisHU.BaseStrategyPlayer</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\HandEvaluate\HandEvaluate.csproj">
-      <Project>{e541e5e2-bfd9-4823-9a21-38047ebd80a3}</Project>
-      <Name>HandEvaluate</Name>
+    <ProjectReference Include="..\..\TexasHoldem.HandEvaluate\TexasHoldem.HandEvaluate.csproj">
+      <Project>{92c59a8b-cb29-4e52-a42d-99905cabdcad}</Project>
+      <Name>TexasHoldem.HandEvaluate</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\TexasHoldem.Logic\TexasHoldem.Logic.csproj">
       <Project>{bcf99e8b-2025-444f-83c7-24542fcf33df}</Project>

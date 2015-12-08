@@ -1,4 +1,4 @@
-﻿namespace TexasHoldem.AI.SmartPlayer.Original.Helpers
+﻿namespace TexasHoldem.AI.TestPlayers.SmartPlayer
 {
     public enum CardValuationType
     {

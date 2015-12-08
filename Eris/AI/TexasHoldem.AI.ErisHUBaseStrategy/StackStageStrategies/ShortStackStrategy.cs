@@ -1,7 +1,8 @@
-﻿namespace ErisHU.BaseStrategyPlayer.BaseStrategy.StackStageStrategies
+﻿namespace TexasHoldem.AI.ErisHUBaseStrategy.StackStageStrategies
 {
     using System.Linq;
-    using ErisHU.BaseStrategyPlayer.HandEvaluate;
+
+    using TexasHoldem.HandEvaluate;
     using TexasHoldem.Logic.Cards;
     using TexasHoldem.Logic.Players;
 
@@ -197,7 +198,7 @@
         {
             PlayerAction action;
 
-           
+
             if (context.PreviousRoundActions.Count == 2)
             {
                 behaviourValue = GetBehaviourValue(context.FirstCard, context.SecondCard, SmallBlindMatrix);
@@ -205,7 +206,7 @@
                 action = RecognitionFirstAction(context);
                 return action;
             }
-           
+
             if (context.PreviousRoundActions.Count == 3)
             {
                 if (context.CanCheck)

@@ -8,9 +8,7 @@
     {
         public static void Main()
         {
-            SimulateGames(new ErisVsOurSmartPlayerGameSimulator());
             SimulateGames(new ErisVsErisGameSimulator());
-            SimulateGames(new ErisVsSmartPlayerGameSimulation());
             SimulateGames(new ErisVsAllwayRiseGameSimulatior());
             SimulateGames(new ErisVsAlwaysCallPlayerSimulator());
             SimulateGames(new ErisVsAlwaysAllInPlayerGameSimulator());

@@ -2,7 +2,7 @@
 {
     using System.Linq;
 
-    using HandEvaluate;
+    using TexasHoldem;
     using TexasHoldem.Logic.Cards;
     using TexasHoldem.Logic.Players;
 

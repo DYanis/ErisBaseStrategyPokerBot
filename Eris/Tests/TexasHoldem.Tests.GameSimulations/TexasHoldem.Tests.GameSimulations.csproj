@@ -61,20 +61,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="GameSimulators\AlwaysCallPlayersGameSimulator.cs" />
     <Compile Include="GameSimulators\BaseGameSimulator.cs" />
     <Compile Include="GameSimulators\ErisVsAllwayFoldGameSimulatior.cs" />
     <Compile Include="GameSimulators\ErisVsAllwayRiseGameSimulatior.cs" />
     <Compile Include="GameSimulators\ErisVsAlwaysAllInPlayerGameSimulator.cs" />
     <Compile Include="GameSimulators\ErisVsDummyPlayerGameSimulatior.cs" />
     <Compile Include="GameSimulators\ErisVsErisGameSimulator.cs" />
-    <Compile Include="GameSimulators\ErisVsOurSmartPlayerGameSimulator.cs" />
-    <Compile Include="GameSimulators\ErisVsSmartPlayerGameSimulation.cs" />
     <Compile Include="GameSimulators\GameSimulationResult.cs" />
     <Compile Include="GameSimulators\IGameSimulator.cs" />
-    <Compile Include="GameSimulators\SmartVsAlwaysCallPlayerSimulator.cs" />
-    <Compile Include="GameSimulators\SmartVsDummyPlayerSimulator.cs" />
-    <Compile Include="GameSimulators\SmartVsSmartPlayerSimulator.cs" />
     <Compile Include="GameSimulators\ErisVsAlwaysCallPlayerSimulator.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -84,17 +78,13 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\AI\ErisHU.BaseStrategyPlayer\ErisHU.BaseStrategyPlayer.csproj">
+    <ProjectReference Include="..\..\AI\ErisHU.BaseStrategyPlayer\TexasHoldem.AI.ErisHU.csproj">
       <Project>{45368e92-f76a-412d-81ce-63b47978416c}</Project>
-      <Name>ErisHU.BaseStrategyPlayer</Name>
+      <Name>TexasHoldem.AI.ErisHU</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\AI\TexasHoldem.AI.DummyPlayer\TexasHoldem.AI.DummyPlayer.csproj">
+    <ProjectReference Include="..\..\AI\TexasHoldem.AI.DummyPlayer\TexasHoldem.AI.TestPlayers.DummyPlayer.csproj">
       <Project>{8F8A872B-A022-4085-AABC-D3BC12B7C1D8}</Project>
-      <Name>TexasHoldem.AI.DummyPlayer</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\AI\TexasHoldem.AI.SmartPlayer.Old\TexasHoldem.AI.SmartPlayer.Old.csproj">
-      <Project>{3C942065-BAA4-4BA2-A2E6-7EB860F7D92D}</Project>
-      <Name>TexasHoldem.AI.SmartPlayer.Old</Name>
+      <Name>TexasHoldem.AI.TestPlayers.DummyPlayer</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\TexasHoldem.Logic\TexasHoldem.Logic.csproj">
       <Project>{BCF99E8B-2025-444F-83C7-24542FCF33DF}</Project>

@@ -1,13 +1,12 @@
-﻿namespace ErisHU.BaseStrategyPlayer
+﻿namespace TexasHoldem.AI.ErisHU
 {
     using System;
-    using System.Linq;
     using System.Collections.Generic;
 
-    using BaseStrategy;
+    using ErisHUBaseStrategy;
     using TexasHoldem.Logic;
     using TexasHoldem.Logic.Players;
-    using BaseStrategy.StackStageStrategies;
+    using ErisHUBaseStrategy.StackStageStrategies;
 
     public class BaseStrategyPlayer : BasePlayer, IPlayer
     {
@@ -56,7 +55,7 @@
 
             if (action == null)
             {
-                action = BaseStrategy.BaseStrategy.GetPlayerAction(getActionContext);
+                action = BaseStrategy.GetPlayerAction(getActionContext);
             }
 
             if (action.Type == PlayerActionType.Raise && action.Money == context.MoneyLeft)

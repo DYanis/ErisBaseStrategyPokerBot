@@ -1,4 +1,4 @@
-﻿namespace ErisHU.BaseStrategyPlayer.BaseStrategy
+﻿namespace TexasHoldem.AI.ErisHUBaseStrategy
 {
     using StackStageStrategies;
     using TexasHoldem.Logic;

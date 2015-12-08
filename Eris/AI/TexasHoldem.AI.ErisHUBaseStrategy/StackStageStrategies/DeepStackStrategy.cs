@@ -1,9 +1,9 @@
-﻿namespace ErisHU.BaseStrategyPlayer.BaseStrategy.StackStageStrategies
+﻿namespace TexasHoldem.AI.ErisHUBaseStrategy.StackStageStrategies
 {
     using System.Collections.Generic;
     using System.Linq;
 
-    using ErisHU.BaseStrategyPlayer.HandEvaluate;
+    using TexasHoldem.HandEvaluate;
     using TexasHoldem.Logic;
     using TexasHoldem.Logic.Cards;
     using TexasHoldem.Logic.Players;
@@ -17,7 +17,7 @@
         public static int cBetOnTheFlopCount = 0;
 
         public static int opponentFoldCBetOnTheFlopCount = 0;
-        
+
         private static readonly byte[,] PreflopSmallBlindMatrix =
         {  // A  K  Q  J  T  9  8  7  6  5  4  3  2
             { 7, 7, 7, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6 }, // A

@@ -1,10 +1,10 @@
 ﻿namespace TexasHoldem.HandEvaluate.Tests
 {
     using System.Collections.Generic;
-    using ErisHU.BaseStrategyPlayer.HandEvaluate;
     using Microsoft.VisualStudio.TestTools.UnitTesting;
+
     using Logic.Cards;
-    // using global::HandEvaluate;
+    using HandEvaluate;
 
     [TestClass]
     public class FullHouseSubTypeRecognitionTests

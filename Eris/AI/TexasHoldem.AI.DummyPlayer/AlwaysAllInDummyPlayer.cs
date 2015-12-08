@@ -1,4 +1,4 @@
-﻿namespace TexasHoldem.AI.DummyPlayer
+﻿namespace TexasHoldem.AI.TestPlayers.DummyPlayer
 {
     using System;
 

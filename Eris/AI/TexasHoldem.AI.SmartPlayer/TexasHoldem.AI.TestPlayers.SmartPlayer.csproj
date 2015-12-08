@@ -5,11 +5,11 @@
     <MinimumVisualStudioVersion>14.0</MinimumVisualStudioVersion>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{3C942065-BAA4-4BA2-A2E6-7EB860F7D92D}</ProjectGuid>
+    <ProjectGuid>{E7BA8017-D56E-485C-81D1-A1CCDAAE624F}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>TexasHoldem.AI.SmartPlayer.Old</RootNamespace>
-    <AssemblyName>TexasHoldem.AI.SmartPlayer.Old</AssemblyName>
+    <RootNamespace>TexasHoldem.AI.TestPlayers.SmartPlayer</RootNamespace>
+    <AssemblyName>TexasHoldem.AI.TestPlayers.SmartPlayer</AssemblyName>
     <DefaultLanguage>en-US</DefaultLanguage>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -41,24 +41,12 @@
     <!-- A reference to the entire .NET Framework is automatically included -->
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BaseStrategy.cs" />
-    <Compile Include="GameStackStage.cs" />
-    <Compile Include="GetActionContext.cs" />
     <Compile Include="Helpers\CardValuationType.cs" />
     <Compile Include="Helpers\HandStrengthValuation.cs" />
-    <Compile Include="PushFoldPlayer.cs" />
-    <Compile Include="SmartPlayerOld.cs" />
+    <Compile Include="SmartPlayerOriginal.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="StackStageStrategies\DeepStackStrategy.cs" />
-    <Compile Include="StackStageStrategies\MiddleStackStrategy.cs" />
-    <Compile Include="StackStageStrategies\PushFoldStackStrategy.cs" />
-    <Compile Include="StackStageStrategies\ShortStackStrategy.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\TexasHoldem.HandEvaluate\TexasHoldem.HandEvaluate.csproj">
-      <Project>{92c59a8b-cb29-4e52-a42d-99905cabdcad}</Project>
-      <Name>TexasHoldem.HandEvaluate</Name>
-    </ProjectReference>
     <ProjectReference Include="..\..\TexasHoldem.Logic\TexasHoldem.Logic.csproj">
       <Project>{bcf99e8b-2025-444f-83c7-24542fcf33df}</Project>
       <Name>TexasHoldem.Logic</Name>

@@ -1,7 +1,8 @@
-﻿namespace ErisHU.BaseStrategyPlayer.BaseStrategy.StackStageStrategies
+﻿namespace TexasHoldem.AI.ErisHUBaseStrategy.StackStageStrategies
 {
     using System.Linq;
-    using ErisHU.BaseStrategyPlayer.HandEvaluate;
+
+    using TexasHoldem.HandEvaluate;
     using TexasHoldem.Logic.Cards;
     using TexasHoldem.Logic.Players;
 
@@ -82,7 +83,7 @@
             {
                 value = GetCurrentHandPushStack(context.FirstCard, context.SecondCard, CallFoldMatrix); // TODO: test play with push fold matrix
             }
-            
+
             if (value >= maxlossMoneyBB)
             {
                 if (maxlossMoneyBB < 0)

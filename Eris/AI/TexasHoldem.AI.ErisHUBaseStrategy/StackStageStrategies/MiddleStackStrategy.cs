@@ -1,7 +1,8 @@
-﻿namespace ErisHU.BaseStrategyPlayer.BaseStrategy.StackStageStrategies
+﻿namespace TexasHoldem.AI.ErisHUBaseStrategy.StackStageStrategies
 {
     using System.Linq;
-    using ErisHU.BaseStrategyPlayer.HandEvaluate;
+
+    using TexasHoldem.HandEvaluate;
     using TexasHoldem.Logic.Cards;
     using TexasHoldem.Logic.Players;
 
@@ -25,7 +26,7 @@
             { 5, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0 }, // 3
             { 5, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2 }, // 2
         };
-        
+
         private static readonly byte[,] BigBlindMatrixWhenSmallBlindRaise =
         {  // A   K   Q   J   T   9   8   7   6   5   4   3   2
             { 12, 12, 12, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10 }, // A
@@ -42,7 +43,7 @@
             { 10, 9,  0,  0,  0,  0,  0,  0,  0,  0,  0,  9,  0 },  // 3
             { 10, 9,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  9 },  // 2
         };
-        
+
         private static readonly byte[,] BigBlindMatrixWhenSmallBlindLimp =
        {   // A  K   Q   J   T   9   8   7   6   5   4   3   2
             { 7, 7,  7,  6,  6,  6,  6,  6,  6,  6,  6,  6,  6 },  // A
@@ -202,7 +203,7 @@
                 action = RecognitionFirstAction(context);
                 return action;
             }
-           
+
             if (context.PreviousRoundActions.Count == 3)
             {
                 if (context.CanCheck)
