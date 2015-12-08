@@ -7,7 +7,6 @@
     using TexasHoldem.Logic.Extensions;
     using TexasHoldem.Logic.Players;
 
-    // TODO: This player is far far away from being smart!
     public class SmartPlayer : BasePlayer
     {
         public override string Name { get; } = "SmartPlayer_" + Guid.NewGuid();

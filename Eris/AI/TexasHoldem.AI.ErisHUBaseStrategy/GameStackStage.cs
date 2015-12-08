@@ -5,6 +5,6 @@
         PushFoldStack = 12,
         ShortStack = 25,
         MiddleStack = 50,
-        DeepStack = 1000
+        DeepStack = 500
     }
 }

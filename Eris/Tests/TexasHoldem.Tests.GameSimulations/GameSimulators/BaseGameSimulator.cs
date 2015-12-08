@@ -20,7 +20,6 @@
             var secondPlayerWins = 0;
             var handsPlayed = 0;
 
-            //// TODO: Parallel.For(1, numberOfGames + 1, i =>
             for (var i = 1; i < numberOfGames + 1; i++)
             {
                 if (i % 100 == 0)

@@ -12,8 +12,6 @@
     {
         private const int MaxCardTypeValue = 14;
 
-        public static List<PlayerActionAndName> FlopActions;
-
         private static readonly byte[,] PreflopSmallBlindMatrix =
         {  // A  K  Q  J  T  9  8  7  6  5  4  3  2
             { 7, 7, 7, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6 }, // A
@@ -238,11 +236,6 @@
             if (context.CurrentPot / 4 > context.MyMoney)
             {
                 return PlayerAction.Raise(context.MyMoney);
-            }
-
-            if ((context.RoundType == GameRoundType.Flop && context.PreviousRoundActions.Count == 0) || (context.PreviousRoundActions.Count == 1 && context.PreviousRoundActions.First().PlayerName != context.Name))
-            {
-                FlopActions = new List<PlayerActionAndName>();
             }
 
             var playerGameType = RecognitionPlayerGameType(context);

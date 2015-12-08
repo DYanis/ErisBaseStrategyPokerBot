@@ -274,7 +274,6 @@
                     }
                     else
                     {
-                        // TODO: may have problem when opponent reraise 1 small blind
                         var lastMyAction = context.PreviousRoundActions.LastOrDefault(x => x.PlayerName == context.Name);
 
                         if (lastMyAction.Action != null && lastMyAction.Action.Type == PlayerActionType.Raise && context.PreviousRoundActions.LastOrDefault().Action.Money >= lastMyAction.Action.Money)
@@ -308,7 +307,6 @@
             }
             var playerGameType = RecognitionPlayerGameType(context);
 
-            // TODO: implemet turn logic
             return GetFlopAction(context);
         }
 
@@ -321,7 +319,6 @@
 
             var playerGameType = RecognitionPlayerGameType(context);
 
-            // TODO: implemet turn logic
             return GetFlopAction(context);
         }
 

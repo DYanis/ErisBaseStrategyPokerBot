@@ -81,16 +81,11 @@
             }
             else
             {
-                value = GetCurrentHandPushStack(context.FirstCard, context.SecondCard, CallFoldMatrix); // TODO: test play with push fold matrix
+                value = GetCurrentHandPushStack(context.FirstCard, context.SecondCard, CallFoldMatrix);
             }
 
             if (value >= maxlossMoneyBB)
             {
-                if (maxlossMoneyBB < 0)
-                {
-                    // TODO: why?
-                }
-
                 return PlayerAction.Raise(context.MyMoney);
             }
             else

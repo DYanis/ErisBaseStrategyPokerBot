@@ -4,9 +4,9 @@
     using System.Collections.Generic;
 
     using ErisHUBaseStrategy;
+    using ErisHUBaseStrategy.StackStageStrategies;
     using TexasHoldem.Logic;
     using TexasHoldem.Logic.Players;
-    using ErisHUBaseStrategy.StackStageStrategies;
 
     public class BaseStrategyPlayer : BasePlayer, IPlayer
     {
@@ -90,11 +90,6 @@
 
         public override void EndRound(EndRoundContext context)
         {
-            if (this.currentRoundType == GameRoundType.Flop && this.currentGameStackStage == GameStackStage.DeepStack)
-            {
-                DeepStackStrategy.FlopActions.AddRange(context.RoundActions);
-            }
-
             this.roundsActions.Add(context.RoundActions);
             base.EndRound(context);
         }

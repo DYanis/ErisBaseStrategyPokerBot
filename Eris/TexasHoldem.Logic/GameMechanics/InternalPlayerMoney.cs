@@ -45,7 +45,6 @@
             }
         }
 
-        // TODO: Currently there is no limit in the raise amount as long as it is positive number
         public PlayerAction DoPlayerAction(PlayerAction action, int maxMoneyPerPlayer)
         {
             if (action.Type == PlayerActionType.Raise)

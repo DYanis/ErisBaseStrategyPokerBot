@@ -23,7 +23,6 @@
 
             if (generalHandType == TexasHoldem.Logic.HandRankType.HighCard)
             {
-                // TODO: add hight card types
                 return HandStrengthType.HighCard;
             }
 
@@ -76,7 +75,6 @@
             {
                 var fourOfAKindCard = board.FirstOrDefault(x => board.Count(y => y.Type == x.Type) == 4);
 
-                // TODO: test it
                 if (board.Count == 4)
                 {
                     if (fourOfAKindCard.Type == CardType.Ace && (firstCard.Type == CardType.Ace || secondCard.Type == CardType.Ace))
@@ -154,7 +152,7 @@
                 {
                     return HandStrengthType.FullHouseTripsOnTheBoardAndOverPair;
                 }
-                // TODO: add board.Count == 4
+
                 var firstKicker = board.FirstOrDefault(x => board.Count(y => y.Type == x.Type) == 1);
                 var secondKicker = board.LastOrDefault(x => board.Count(y => y.Type == x.Type) == 1);
                 var tripsCard = board.FirstOrDefault(x => board.Count(y => y.Type == x.Type) == 3);
@@ -497,7 +495,6 @@
                     return HandStrengthType.TwoPairsImprovedWithOverPair;
                 }
 
-                // TODO: Test with 4 and 3 board's cards
                 if ((kickerOnTheBoard != null && (firstPairType == CardType.Ace || secondPairType == CardType.Ace)
                     && (firstPairType == CardType.King || secondPairType == CardType.King)
                     && kickerOnTheBoard.Type == CardType.Queen))
@@ -505,13 +502,11 @@
                     return HandStrengthType.TwoPairsWithTopKickerWitoutMyCards;
                 }
 
-                // TODO: Test with 4 and 3 board's cards
                 if ((kickerOnTheBoard != null && (firstPairType == CardType.Ace || secondPairType == CardType.Ace) && kickerOnTheBoard.Type == CardType.King))
                 {
                     return HandStrengthType.TwoPairsWithTopKickerWitoutMyCards;
                 }
 
-                // TODO: Test with 4 and 3 board's cards
                 if (kickerOnTheBoard != null && kickerOnTheBoard.Type == CardType.Ace)
                 {
                     return HandStrengthType.TwoPairsWithTopKickerWitoutMyCards;
@@ -534,7 +529,6 @@
                     return HandStrengthType.TwoPairsImprovedToTopKicker;
                 }
 
-                // TODO: Test with 4 and 3 board's cards
                 if (kickerOnTheBoard != null && (kickerOnTheBoard.Type < firstCard.Type || kickerOnTheBoard.Type < secondCard.Type))
                 {
                     return HandStrengthType.TwoPairsImprovedKicker;
