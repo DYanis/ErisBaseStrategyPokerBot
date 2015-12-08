@@ -45,3 +45,5 @@ Yet dummy AI for Telerik Academy DSA Course teamwork
 - - - - 
 
 ###### Go to [Bot Logic](https://github.com/DYanis/ErisBaseStrategyPokerBot/tree/master/Eris/AI/TexasHoldem.AI.ErisHUBaseStrategy)
+
+![TilT_ZevS Winners](https://cloud.githubusercontent.com/assets/10419828/11670294/b68e4942-9e09-11e5-94fb-6452212d895c.png)
