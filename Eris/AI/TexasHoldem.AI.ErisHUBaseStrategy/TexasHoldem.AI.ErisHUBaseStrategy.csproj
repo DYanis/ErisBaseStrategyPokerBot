@@ -5,7 +5,7 @@
     <MinimumVisualStudioVersion>14.0</MinimumVisualStudioVersion>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{1051CAF5-6901-4E8F-B0D4-A0F5CCE2D312}</ProjectGuid>
+    <ProjectGuid>{5261D8A4-D205-447F-A3D8-D4EE3BEDAF57}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>TexasHoldem.AI.ErisHUBaseStrategy</RootNamespace>
@@ -51,7 +51,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\TexasHoldem.HandEvaluate\TexasHoldem.HandEvaluate.csproj">
-      <Project>{92c59a8b-cb29-4e52-a42d-99905cabdcad}</Project>
+      <Project>{2898bfae-5f11-4a8f-96ad-364938f56369}</Project>
       <Name>TexasHoldem.HandEvaluate</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\TexasHoldem.Logic\TexasHoldem.Logic.csproj">

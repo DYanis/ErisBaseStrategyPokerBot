@@ -62,14 +62,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="GameSimulators\BaseGameSimulator.cs" />
-    <Compile Include="GameSimulators\ErisVsAllwayFoldGameSimulatior.cs" />
     <Compile Include="GameSimulators\ErisVsAllwayRiseGameSimulatior.cs" />
     <Compile Include="GameSimulators\ErisVsAlwaysAllInPlayerGameSimulator.cs" />
-    <Compile Include="GameSimulators\ErisVsDummyPlayerGameSimulatior.cs" />
+    <Compile Include="GameSimulators\ErisVsAlwaysCallPlayerSimulator.cs" />
     <Compile Include="GameSimulators\ErisVsErisGameSimulator.cs" />
     <Compile Include="GameSimulators\GameSimulationResult.cs" />
     <Compile Include="GameSimulators\IGameSimulator.cs" />
-    <Compile Include="GameSimulators\ErisVsAlwaysCallPlayerSimulator.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -78,13 +76,17 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\AI\ErisHU.BaseStrategyPlayer\TexasHoldem.AI.ErisHU.csproj">
-      <Project>{45368e92-f76a-412d-81ce-63b47978416c}</Project>
+    <ProjectReference Include="..\..\AI\TexasHoldem.AI.DummyPlayer\TexasHoldem.AI.DummyPlayer.csproj">
+      <Project>{8F8A872B-A022-4085-AABC-D3BC12B7C1D8}</Project>
+      <Name>TexasHoldem.AI.DummyPlayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\AI\TexasHoldem.AI.ErisHU\TexasHoldem.AI.ErisHU.csproj">
+      <Project>{866c6427-338b-4faf-850e-e8c331c7f765}</Project>
       <Name>TexasHoldem.AI.ErisHU</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\AI\TexasHoldem.AI.DummyPlayer\TexasHoldem.AI.TestPlayers.DummyPlayer.csproj">
-      <Project>{8F8A872B-A022-4085-AABC-D3BC12B7C1D8}</Project>
-      <Name>TexasHoldem.AI.TestPlayers.DummyPlayer</Name>
+    <ProjectReference Include="..\..\AI\TexasHoldem.AI.SmartPlayer\TexasHoldem.AI.SmartPlayer.csproj">
+      <Project>{E7BA8017-D56E-485C-81D1-A1CCDAAE624F}</Project>
+      <Name>TexasHoldem.AI.SmartPlayer</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\TexasHoldem.Logic\TexasHoldem.Logic.csproj">
       <Project>{BCF99E8B-2025-444F-83C7-24542FCF33DF}</Project>

@@ -17237,8 +17237,7 @@
   "projectFileDependencyGroups": {
     "": [
       "Microsoft.NETCore >= 5.0.0",
-      "Microsoft.NETCore.Portable.Compatibility >= 1.0.0",
-      "StyleCop.Analyzers >= 1.0.0-beta016"
+      "Microsoft.NETCore.Portable.Compatibility >= 1.0.0"
     ],
     ".NETPlatform,Version=v5.0": []
   }

@@ -5,11 +5,11 @@
     <MinimumVisualStudioVersion>14.0</MinimumVisualStudioVersion>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{E541E5E2-BFD9-4823-9A21-38047EBD80A3}</ProjectGuid>
+    <ProjectGuid>{8F8A872B-A022-4085-AABC-D3BC12B7C1D8}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>HandEvaluate</RootNamespace>
-    <AssemblyName>HandEvaluate</AssemblyName>
+    <RootNamespace>TexasHoldem.AI.DummyPlayer</RootNamespace>
+    <AssemblyName>TexasHoldem.AI.DummyPlayer</AssemblyName>
     <DefaultLanguage>en-US</DefaultLanguage>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -25,6 +25,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>..\..\Rules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -33,20 +34,22 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>..\..\Rules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
     <None Include="project.json" />
     <!-- A reference to the entire .NET Framework is automatically included -->
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BoardType.cs" />
-    <Compile Include="HandEvaluator.cs" />
-    <Compile Include="HandStrengthType.cs" />
-    <Compile Include="KickerType.cs" />
+    <Compile Include="AlwaysAllInDummyPlayer.cs" />
+    <Compile Include="AlwaysCallDummyPlayer.cs" />
+    <Compile Include="AlwaysFoldDummyPlayer.cs" />
+    <Compile Include="AlwaysRaiseDummyPlayer.cs" />
+    <Compile Include="DummyPlayer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\TexasHoldem.Logic\TexasHoldem.Logic.csproj">
+    <ProjectReference Include="..\..\TexasHoldem.Logic\TexasHoldem.Logic.csproj">
       <Project>{bcf99e8b-2025-444f-83c7-24542fcf33df}</Project>
       <Name>TexasHoldem.Logic</Name>
     </ProjectReference>

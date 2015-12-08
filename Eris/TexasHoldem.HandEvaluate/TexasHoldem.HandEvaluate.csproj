@@ -5,7 +5,7 @@
     <MinimumVisualStudioVersion>14.0</MinimumVisualStudioVersion>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{92C59A8B-CB29-4E52-A42D-99905CABDCAD}</ProjectGuid>
+    <ProjectGuid>{2898BFAE-5F11-4A8F-96AD-364938F56369}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>TexasHoldem.HandEvaluate</RootNamespace>
