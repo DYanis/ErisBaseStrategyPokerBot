@@ -1,4 +1,4 @@
-# Eris-No-Real-Poker-Bot
+# Eris-Base-Strategy-Poker-Bot
 
 # Team TilT_ZevS Hold'em AI
 - - - - 
