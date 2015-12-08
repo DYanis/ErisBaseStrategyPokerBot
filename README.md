@@ -1,4 +1,4 @@
-# Eris-Base-Strategy-Poker-Bot
+# Eris Base Strategy HU Poker Bot
 
 # Team TilT_ZevS Hold'em AI
 - - - - 
