@@ -48,5 +48,4 @@ Yet dummy AI for Telerik Academy DSA Course teamwork
 
 * Unit test for hand strengths type evaluation
 
-###### Repo of the Team [Link to GitHub](https://github.com/DYanis/Eris-No-Real-Poker-Bot)
 ###### Bot Logic [Link to GitHub](https://github.com/DYanis/ErisBaseStrategyPokerBot/tree/master/Eris/AI/TexasHoldem.AI.ErisHUBaseStrategy)
