@@ -9,7 +9,7 @@
     public static class PushFoldStackStrategy
     {
         private const int MaxCardTypeValue = 14;
-        private const int InitialStack = 990;
+        private const int InitialStack = 1000;
 
         private static readonly double[,] PushFoldMatrix =
           {    // A   K    Q     J    T    9     8    7     6    5     4     3     2

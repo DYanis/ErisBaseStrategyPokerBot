@@ -14,10 +14,6 @@
 
         public static List<PlayerActionAndName> FlopActions;
 
-        public static int cBetOnTheFlopCount = 0;
-
-        public static int opponentFoldCBetOnTheFlopCount = 0;
-
         private static readonly byte[,] PreflopSmallBlindMatrix =
         {  // A  K  Q  J  T  9  8  7  6  5  4  3  2
             { 7, 7, 7, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6 }, // A
@@ -244,23 +240,6 @@
                 return PlayerAction.Raise(context.MyMoney);
             }
 
-            int procentCBetFolds;
-            try
-            {
-                procentCBetFolds = 100 / (cBetOnTheFlopCount / opponentFoldCBetOnTheFlopCount);
-            }
-            catch (System.Exception)
-            {
-                procentCBetFolds = 0;
-            }
-
-            var firstPlayerAction = context.PreviousRoundActions.FirstOrDefault();
-
-            if (context.PreviousRoundActions.Count == 1 && firstPlayerAction.PlayerName != context.Name && firstPlayerAction.Action.Type == PlayerActionType.CheckCall && procentCBetFolds >= 50)
-            {
-                return PlayerAction.Raise(context.CurrentPot / 2);
-            }
-
             if ((context.RoundType == GameRoundType.Flop && context.PreviousRoundActions.Count == 0) || (context.PreviousRoundActions.Count == 1 && context.PreviousRoundActions.First().PlayerName != context.Name))
             {
                 FlopActions = new List<PlayerActionAndName>();
@@ -330,7 +309,6 @@
 
         public static PlayerAction GetTurnAction(GetActionContext context)
         {
-
 
             if (context.CurrentPot / 4 > context.MyMoney)
             {
@@ -511,19 +489,6 @@
             }
 
             throw new System.ArgumentException("PlayerGameType Error !!");
-        }
-
-        private static void PreflopDataUpdate(GetActionContext context)
-        {
-            var firstFlopAction = FlopActions.FirstOrDefault();
-            var secondFlopAction = FlopActions.Skip(1).FirstOrDefault();
-            var thirdFlopAction = FlopActions.Skip(2).FirstOrDefault();
-
-            if (firstFlopAction.PlayerName != context.Name && firstFlopAction.Action.Type == PlayerActionType.CheckCall
-                && secondFlopAction.Action.Type == PlayerActionType.Raise && thirdFlopAction.Action.Type == PlayerActionType.Fold)
-            {
-                opponentFoldCBetOnTheFlopCount++;
-            }
         }
     }
 }
