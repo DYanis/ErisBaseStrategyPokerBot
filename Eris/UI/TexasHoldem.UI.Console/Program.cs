@@ -2,7 +2,7 @@
 {
     using System;
 
-    using TexasHoldem.AI.SmartPlayer;
+    using AI.TestPlayers.SmartPlayer;
     using TexasHoldem.Logic.GameMechanics;
 
     public static class Program

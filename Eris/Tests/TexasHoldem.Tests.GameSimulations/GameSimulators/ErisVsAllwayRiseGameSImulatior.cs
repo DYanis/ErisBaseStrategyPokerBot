@@ -1,7 +1,7 @@
 ﻿namespace TexasHoldem.Tests.GameSimulations.GameSimulators
 {
-    using AI.DummyPlayer;
     using AI.ErisHU;
+    using AI.TestPlayers.DummyPlayer;
     using TexasHoldem.Logic.Players;
 
     public class ErisVsAllwayRiseGameSimulatior : BaseGameSimulator
