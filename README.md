@@ -35,7 +35,7 @@ Yet dummy AI for Telerik Academy DSA Course teamwork
     * Short stack strategy
 
 * BaseStrategyPlayer
-  * Inherits logic's Bass Player and overrides its methods to choose the proper game stage strategy
+  * Inherits logic's Base Player and overrides its methods to choose the proper game stage strategy
 
 ## Main Idea
 
